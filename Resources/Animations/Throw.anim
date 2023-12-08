@@ -266,7 +266,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: Quick Position Sync/Position Sync Target
+    path: Rigidbody Throw/Quick Position Sync/Position Sync Target
     classID: 1773428102
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -313,7 +313,7 @@ AnimationClip:
       customType: 27
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2821016631
+      path: 3644068693
       attribute: 3305885265
       script: {fileID: 0}
       typeID: 1773428102
@@ -611,7 +611,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: Quick Position Sync/Position Sync Target
+    path: Rigidbody Throw/Quick Position Sync/Position Sync Target
     classID: 1773428102
     script: {fileID: 0}
   m_EulerEditorCurves: []
