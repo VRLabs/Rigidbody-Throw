@@ -48,7 +48,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: Y
+    m_ConditionEvent: RigidbodyThrow/Y
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4404759305453153275}
@@ -183,7 +183,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: X
+    m_ConditionEvent: RigidbodyThrow/X
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5753732199631491758}
@@ -274,7 +274,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: X
+    m_ConditionEvent: RigidbodyThrow/X
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 598300464136039115}
@@ -379,7 +379,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: Z Sync
+  m_BlendParameter: RigidbodyThrow/Z Sync
   m_BlendParameterY: Blend
   m_MinThreshold: -1
   m_MaxThreshold: 1
@@ -410,7 +410,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: X Sync
+  m_BlendParameter: RigidbodyThrow/X Sync
   m_BlendParameterY: Blend
   m_MinThreshold: -1
   m_MaxThreshold: 1
@@ -544,7 +544,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: DetectMirror
+    m_ConditionEvent: RigidbodyThrow/DetectMirror
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 87033004275674576}
@@ -710,7 +710,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: Z
+    m_ConditionEvent: RigidbodyThrow/Z
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5156725966175451944}
@@ -827,7 +827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parameters:
   - type: 0
-    name: Z Flip
+    name: RigidbodyThrow/Z Flip
     source: 
     value: 1
     valueMin: 0
@@ -839,8 +839,8 @@ MonoBehaviour:
     destMin: 0
     destMax: 0
   - type: 3
-    name: Z Sync
-    source: Z
+    name: RigidbodyThrow/Z Sync
+    source: RigidbodyThrow/Z
     value: 0
     valueMin: 0
     valueMax: 0
@@ -959,7 +959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parameters:
   - type: 0
-    name: DetectMirror
+    name: RigidbodyThrow/DetectMirror
     source: 
     value: 1
     valueMin: 0
@@ -1025,7 +1025,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: Blend
+    m_DirectBlendParameter: RigidbodyThrow/One
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -1460600026132306586}
@@ -1033,7 +1033,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: Blend
+    m_DirectBlendParameter: RigidbodyThrow/One
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 6840154031697574815}
@@ -1041,7 +1041,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: Blend
+    m_DirectBlendParameter: RigidbodyThrow/One
     m_Mirror: 0
   m_BlendParameter: X
   m_BlendParameterY: X
@@ -1224,7 +1224,7 @@ AnimatorStateTransition:
     m_ConditionEvent: IsLocal
     m_EventTreshold: 0
   - m_ConditionMode: 4
-    m_ConditionEvent: X
+    m_ConditionEvent: RigidbodyThrow/X
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5753732199631491758}
@@ -1302,7 +1302,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: Z
+    m_ConditionEvent: RigidbodyThrow/Z
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4702138141285621731}
@@ -1342,7 +1342,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: Y Flip
+  m_BlendParameter: RigidbodyThrow/Y Flip
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -1466,7 +1466,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: Y Sync
+  m_BlendParameter: RigidbodyThrow/Y Sync
   m_BlendParameterY: Blend
   m_MinThreshold: -1
   m_MaxThreshold: 1
@@ -1487,103 +1487,79 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: GestureRight
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: DetectMirror
+    m_Controller: {fileID: 0}
+  - m_Name: RigidbodyThrow/DetectMirror
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: velo
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: maxp
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: overd
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: mass
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Blend
+    m_Controller: {fileID: 0}
+  - m_Name: RigidbodyThrow/One
     m_Type: 1
     m_DefaultFloat: 1
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: X
+    m_Controller: {fileID: 0}
+  - m_Name: RigidbodyThrow/X
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Y
+    m_Controller: {fileID: 0}
+  - m_Name: RigidbodyThrow/Y
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Z
+    m_Controller: {fileID: 0}
+  - m_Name: RigidbodyThrow/Z
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: X Sync
+    m_Controller: {fileID: 0}
+  - m_Name: RigidbodyThrow/X Sync
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Y Sync
+    m_Controller: {fileID: 0}
+  - m_Name: RigidbodyThrow/Y Sync
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Z Sync
+    m_Controller: {fileID: 0}
+  - m_Name: RigidbodyThrow/Z Sync
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: X Flip
+    m_Controller: {fileID: 0}
+  - m_Name: RigidbodyThrow/X Flip
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Y Flip
+    m_Controller: {fileID: 0}
+  - m_Name: RigidbodyThrow/Y Flip
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: Z Flip
+    m_Controller: {fileID: 0}
+  - m_Name: RigidbodyThrow/Z Flip
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -1741,7 +1717,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: Y
+    m_ConditionEvent: RigidbodyThrow/Y
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1863217996961947541}
@@ -1766,7 +1742,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: X
+    m_ConditionEvent: RigidbodyThrow/X
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 598300464136039115}
@@ -1806,7 +1782,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: X Sync
+  m_BlendParameter: RigidbodyThrow/X Sync
   m_BlendParameterY: Blend
   m_MinThreshold: -1
   m_MaxThreshold: 1
@@ -1884,7 +1860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parameters:
   - type: 0
-    name: Y Flip
+    name: RigidbodyThrow/Y Flip
     source: 
     value: 1
     valueMin: 0
@@ -1896,8 +1872,8 @@ MonoBehaviour:
     destMin: 0
     destMax: 0
   - type: 3
-    name: Y Sync
-    source: Y
+    name: RigidbodyThrow/Y Sync
+    source: RigidbodyThrow/Y
     value: 0
     valueMin: 0
     valueMax: 0
@@ -2000,7 +1976,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: DetectMirror
+    m_ConditionEvent: RigidbodyThrow/DetectMirror
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8525356490853233576}
@@ -2250,7 +2226,7 @@ AnimatorStateTransition:
     m_ConditionEvent: IsLocal
     m_EventTreshold: 0
   - m_ConditionMode: 3
-    m_ConditionEvent: X
+    m_ConditionEvent: RigidbodyThrow/X
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 598300464136039115}
@@ -2306,7 +2282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parameters:
   - type: 0
-    name: X Flip
+    name: RigidbodyThrow/X Flip
     source: 
     value: 1
     valueMin: 0
@@ -2318,8 +2294,8 @@ MonoBehaviour:
     destMin: 0
     destMax: 0
   - type: 3
-    name: X Sync
-    source: X
+    name: RigidbodyThrow/X Sync
+    source: RigidbodyThrow/X
     value: 0
     valueMin: 0
     valueMax: 0
@@ -2345,7 +2321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parameters:
   - type: 0
-    name: X Flip
+    name: RigidbodyThrow/X Flip
     source: 
     value: 0
     valueMin: 0
@@ -2357,8 +2333,8 @@ MonoBehaviour:
     destMin: 0
     destMax: 0
   - type: 3
-    name: X Sync
-    source: X
+    name: RigidbodyThrow/X Sync
+    source: RigidbodyThrow/X
     value: 0
     valueMin: 0
     valueMax: 0
@@ -2379,7 +2355,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: Z
+    m_ConditionEvent: RigidbodyThrow/Z
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4702138141285621731}
@@ -2404,7 +2380,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: Y
+    m_ConditionEvent: RigidbodyThrow/Y
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1863217996961947541}
@@ -2456,7 +2432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parameters:
   - type: 0
-    name: Y Flip
+    name: RigidbodyThrow/Y Flip
     source: 
     value: 0
     valueMin: 0
@@ -2468,8 +2444,8 @@ MonoBehaviour:
     destMin: 0
     destMax: 0
   - type: 3
-    name: Y Sync
-    source: Y
+    name: RigidbodyThrow/Y Sync
+    source: RigidbodyThrow/Y
     value: 0
     valueMin: 0
     valueMax: 0
@@ -2490,7 +2466,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: X
+    m_ConditionEvent: RigidbodyThrow/X
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5753732199631491758}
@@ -2660,7 +2636,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: Z Flip
+  m_BlendParameter: RigidbodyThrow/Z Flip
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -2691,7 +2667,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: Z Sync
+  m_BlendParameter: RigidbodyThrow/Z Sync
   m_BlendParameterY: Blend
   m_MinThreshold: -1
   m_MaxThreshold: 1
@@ -2712,7 +2688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parameters:
   - type: 0
-    name: Z Flip
+    name: RigidbodyThrow/Z Flip
     source: 
     value: 0
     valueMin: 0
@@ -2724,8 +2700,8 @@ MonoBehaviour:
     destMin: 0
     destMax: 0
   - type: 3
-    name: Z Sync
-    source: Z
+    name: RigidbodyThrow/Z Sync
+    source: RigidbodyThrow/Z
     value: 0
     valueMin: 0
     valueMax: 0
@@ -2761,7 +2737,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: X Flip
+  m_BlendParameter: RigidbodyThrow/X Flip
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -2804,7 +2780,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: Y
+    m_ConditionEvent: RigidbodyThrow/Y
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4404759305453153275}
@@ -2866,7 +2842,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: Y Sync
+  m_BlendParameter: RigidbodyThrow/Y Sync
   m_BlendParameterY: Blend
   m_MinThreshold: -1
   m_MaxThreshold: 1
@@ -2882,7 +2858,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: Z
+    m_ConditionEvent: RigidbodyThrow/Z
     m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5156725966175451944}
