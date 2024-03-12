@@ -52,12 +52,12 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   collisionTags:
-  - Y
+  - RigidbodyThrow/Y
   allowSelf: 1
   allowOthers: 1
   localOnly: 1
   receiverType: 2
-  parameter: Y
+  parameter: RigidbodyThrow/Y
   minVelocity: 0.05
 --- !u!1818360608 &5433569451595482737
 PositionConstraint:
@@ -5063,37 +5063,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1975671478148591760}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2403110782504105658
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1294431388270478091}
-  m_Layer: 0
-  m_Name: Position Sync Target
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1294431388270478091
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2403110782504105658}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2751916889712439949}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2462824759699871036
 GameObject:
   m_ObjectHideFlags: 0
@@ -5145,9 +5114,9 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   collisionTags:
-  - X
-  - Y
-  - Z
+  - RigidbodyThrow/X
+  - RigidbodyThrow/Y
+  - RigidbodyThrow/Z
 --- !u!1 &2690687199154126214
 GameObject:
   m_ObjectHideFlags: 0
@@ -5298,7 +5267,7 @@ PositionConstraint:
   m_Active: 1
   m_IsLocked: 1
   m_Sources:
-  - sourceTransform: {fileID: 1294431388270478091}
+  - sourceTransform: {fileID: 0}
     weight: 1
 --- !u!1 &3273892087057636678
 GameObject:
@@ -5385,12 +5354,12 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   collisionTags:
-  - Z
+  - RigidbodyThrow/X
   allowSelf: 1
   allowOthers: 1
   localOnly: 1
   receiverType: 2
-  parameter: Z
+  parameter: RigidbodyThrow/X
   minVelocity: 0.05
 --- !u!1818360608 &5922929770852095114
 PositionConstraint:
@@ -5445,7 +5414,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6595271248038906903}
-  - {fileID: 1294431388270478091}
   m_Father: {fileID: 1975671478148591760}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1818360610 &6041378110622063445
@@ -5521,12 +5489,12 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   collisionTags:
-  - X
+  - RigidbodyThrow/Z
   allowSelf: 1
   allowOthers: 1
   localOnly: 1
   receiverType: 2
-  parameter: X
+  parameter: RigidbodyThrow/Z
   minVelocity: 0.05
 --- !u!1818360608 &8366246236522474532
 PositionConstraint:

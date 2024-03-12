@@ -13,32 +13,32 @@ MonoBehaviour:
   m_Name: Rigidbody Throw Parameters
   m_EditorClassIdentifier: 
   parameters:
-  - name: X Sync
+  - name: RigidbodyThrow/X Sync
     valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 1
-  - name: Y Sync
+  - name: RigidbodyThrow/Y Sync
     valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 1
-  - name: Z Sync
+  - name: RigidbodyThrow/Z Sync
     valueType: 1
     saved: 0
     defaultValue: 0
     networkSynced: 1
-  - name: X Flip
+  - name: RigidbodyThrow/X Flip
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 1
-  - name: Y Flip
+  - name: RigidbodyThrow/Y Flip
     valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 1
-  - name: Z Flip
+  - name: RigidbodyThrow/Z Flip
     valueType: 2
     saved: 0
     defaultValue: 0
