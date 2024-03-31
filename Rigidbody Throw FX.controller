@@ -846,6 +846,33 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &-4856072086154241320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - type: 0
+    name: RigidbodyThrow/Thrown
+    source: 
+    value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  localOnly: 0
+  debugString: 
 --- !u!1102 &-4794674810675143211
 AnimatorState:
   serializedVersion: 6
@@ -982,6 +1009,9 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 2
     m_ConditionEvent: RigidbodyThrow/CollisionInactive
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: RigidbodyThrow/Thrown
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5034187986362990457}
@@ -1807,6 +1837,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: RigidbodyThrow/Thrown
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Rigidbody Throw Main
@@ -2250,7 +2286,8 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1169384992782905777}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -4856072086154241320}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -2265,6 +2302,33 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!114 &2463764449049240543
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -706344726, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - type: 0
+    name: RigidbodyThrow/Thrown
+    source: 
+    value: 0
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  localOnly: 0
+  debugString: 
 --- !u!1102 &2519182055650646164
 AnimatorState:
   serializedVersion: 6
@@ -2415,7 +2479,8 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 3613076352499597472}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 2463764449049240543}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -2834,6 +2899,18 @@ MonoBehaviour:
     name: RigidbodyThrow/ResetCollision
     source: 
     value: 1
+    valueMin: 0
+    valueMax: 0
+    chance: 0
+    convertRange: 0
+    sourceMin: 0
+    sourceMax: 0
+    destMin: 0
+    destMax: 0
+  - type: 0
+    name: RigidbodyThrow/Thrown
+    source: 
+    value: 0
     valueMin: 0
     valueMax: 0
     chance: 0
