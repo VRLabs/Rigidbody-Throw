@@ -386,8 +386,8 @@ MonoBehaviour:
     convertRange: 1
     sourceMin: 0
     sourceMax: 0.5
-    destMin: -1
-    destMax: 1
+    destMin: 1
+    destMax: -1
   - type: 3
     name: RigidbodyThrow/Y Sync
     source: RigidbodyThrow/Y
@@ -398,8 +398,8 @@ MonoBehaviour:
     convertRange: 1
     sourceMin: 0
     sourceMax: 0.5
-    destMin: -1
-    destMax: 1
+    destMin: 1
+    destMax: -1
   - type: 3
     name: RigidbodyThrow/Z Sync
     source: RigidbodyThrow/Z
@@ -872,8 +872,8 @@ MonoBehaviour:
     convertRange: 1
     sourceMin: 0
     sourceMax: 0.5
-    destMin: -1
-    destMax: 1
+    destMin: 1
+    destMax: -1
   - type: 3
     name: RigidbodyThrow/Z Sync
     source: RigidbodyThrow/Y
@@ -3267,8 +3267,8 @@ MonoBehaviour:
     convertRange: 1
     sourceMin: 0
     sourceMax: 0.5
-    destMin: -1
-    destMax: 1
+    destMin: 1
+    destMax: -1
   - type: 3
     name: RigidbodyThrow/Y Sync
     source: RigidbodyThrow/Y

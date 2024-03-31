@@ -30,7 +30,7 @@ PREVIEW TODO
 * When the system is enabled, these particles hit the Force Collider, which adds force to the Rigidbody.
 * This Rigidbody then flies forward as if thrown, and collides with the world using the Collision Collider.
 * Meanwhile, Contact Senders and Receivers, in combination with Constraints, are used to figure out the position of the thrown object, and this is synced to the remote client (since parameter force is local only).
-  * Do note that this means that the rotation does not get synced, only position.
+  * If you want rotation sync
 
 ## Install guide
 
@@ -54,10 +54,10 @@ PREVIEW TODO
 ```c++
 Colliders:              2
 Constraints:            10
-Contact Receivers:      3
-Contact Senders:        1
+Contact Receivers:      4
+Contact Senders:        2
 FX Animator Layers:     3
-Particle Systems:       1
+Particle Systems:       2
 Rigidbodies:            2
 Joints:                 1
 Expression Parameters:  27
@@ -73,6 +73,7 @@ Rigidbody Throw
 |  |-Colliders
 |  |  |-Force Collider
 |  |  |-Colission Collider
+|  |  |-Collision Detection
 |  |-Example Sphere
 |-Quick Position Sync
 |  |-Position Sync
@@ -90,7 +91,7 @@ Rigidbody Throw
 * [hfcred](https://github.com/hfcred)
 * [jellejurre](https://github.com/jellejurre)
 * [jetees](https://github.com/jetees)
-* [JustSleightly](links.sleightly.dev)
+* [JustSleightly](https://links.sleightly.dev)
 
 ## License
 
