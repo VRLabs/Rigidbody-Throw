@@ -2343,7 +2343,7 @@ MonoBehaviour:
   - type: 0
     name: RigidbodyThrow/Thrown
     source: 
-    value: 0
+    value: 1
     valueMin: 0
     valueMax: 0
     chance: 0
