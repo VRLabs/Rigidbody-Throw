@@ -34,7 +34,7 @@ PREVIEW TODO
 
 ## Install guide
 
-[INSTALL GUIDE TODO]
+https://github.com/VRLabs/Rigidbody-Throw/assets/76777936/57fbfe66-ddfd-4b0c-b168-e739ffc0a1ef
 
 * Merge the Animator Controller ``Rigidbody Throw FX`` to your own FX Controller, using the [Avatars 3.0 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) tool.
 * Merge the Expression Parameter List ``Rigidbody Throw Parameters`` to your own Expression Parameter List, using the [Avatars 3.0 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) tool.
