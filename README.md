@@ -30,7 +30,7 @@ Launch an object with collision against the world
 * When the system is enabled, these particles hit the Force Collider, which adds force to the Rigidbody.
 * This Rigidbody then flies forward as if thrown, and collides with the world using the Collision Collider.
 * Meanwhile, Contact Senders and Receivers, in combination with Constraints, are used to figure out the position of the thrown object, and this is synced to the remote client (since parameter force is local only).
-  * If you want rotation sync
+  * If you want rotation sync, install the components from the Rotation-Synced directory.
 
 ## Install guide
 
@@ -53,20 +53,37 @@ https://github.com/VRLabs/Rigidbody-Throw/assets/76777936/57fbfe66-ddfd-4b0c-b16
 
 ## Performance stats
 
+Default version:
 ```c++
 Colliders:              2
 Constraints:            10
 Contact Receivers:      4
 Contact Senders:        2
-FX Animator Layers:     3
+FX Animator Layers:     4
 Particle Systems:       2
 Rigidbodies:            2
 Joints:                 1
 Expression Parameters:  27
 ```
 
+Rotation synced version:
+```c++
+Colliders:              2
+Constraints:            14
+Contact Receivers:      4
+Contact Senders:        2
+FX Animator Layers:     4
+Particle Systems:       2
+PhysBones:              6
+PhysBone Colliders:     3
+Rigidbodies:            2
+Joints:                 1
+Expression Parameters:  51
+```
+
 ## Hierarchy layout
 
+Default version:
 ```html
 Rigidbody Throw
 |-Reset Target
@@ -86,6 +103,40 @@ Rigidbody Throw
 |  |  |  |-Receiver Z
 |  |  |-Local Target
 |  |  |-Remote Target
+```
+
+Rotation synced version:
+```html
+Rigidbody Throw
+|-Reset Target
+|-Force Particle
+|-Container
+|  |-Colliders
+|  |  |-Force Collider
+|  |  |-Colission Collider
+|  |  |-Collision Detection
+|  |-Example Cube
+|-Quick Position Sync
+|  |-Position Sync
+|  |  |-Contacts
+|  |  |  |-Sender
+|  |  |  |-Receiver X
+|  |  |  |-Receiver Y
+|  |  |  |-Receiver Z
+|  |  |-Local Target
+|  |  |-Remote Target
+|  |-Rotation Sync
+|  |  |-Measure Bones
+|  |  |  |-Measure X Magnitude
+|  |  |  |-Measure X Sign
+|  |  |  |-Measure Y Magnitude
+|  |  |  |-Measure Y Sign
+|  |  |  |-Measure Z Magnitude
+|  |  |  |-Measure Z Sign
+|  |  |-Measure Planes
+|  |  |  |-X Angle Plane
+|  |  |  |-Y Angle Plane
+|  |  |  |-Z Angle Plane
 ```
 
 ## Contributors
