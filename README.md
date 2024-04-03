@@ -12,7 +12,7 @@
 
 Launch an object with collision against the world
 
-PREVIEW TODO
+![Rigidbody Throw](https://github.com/VRLabs/Rigidbody-Throw/assets/76777936/b4915105-3d27-4095-b162-435a2a981b89)
 
 
 ### ⬇️ [Download Latest Version](https://github.com/VRLabs/Rigidbody-Throw/releases/latest)
