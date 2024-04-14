@@ -10,7 +10,7 @@
 [![Generic badge](https://img.shields.io/discord/706913824607043605?color=%237289da&label=DISCORD&logo=Discord&style=for-the-badge)](https://discord.vrlabs.dev/)
 [![Generic badge](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dvrlabs%26type%3Dpatrons&style=for-the-badge)](https://patreon.vrlabs.dev/)
 
-Launch an object with collision against the world
+Throw an object with collision against the world
 
 ![Rigidbody Throw](https://github.com/VRLabs/Rigidbody-Throw/assets/76777936/b4915105-3d27-4095-b162-435a2a981b89)
 
