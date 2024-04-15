@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace VRLabs.RigidbodyThrow
 {
-	public class ContactTracker : ScriptableObject
+	public class RigidbodyThrow : ScriptableObject
 	{
 		public const string packageName = "Rigidbody-Throw";
 		
