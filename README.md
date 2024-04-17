@@ -30,6 +30,7 @@ Throw an object with collision against the world
 * When the system is enabled, these particles hit the Force Collider, which adds force to the Rigidbody.
 * This Rigidbody then flies forward as if thrown, and collides with the world using the Collision Collider.
 * Meanwhile, Contact Senders and Receivers, in combination with Constraints, are used to figure out the position of the thrown object, and this is synced to the remote client (since parameter force is local only).
+  * This remote sync is not incredibly accurate to not spend too many bits on it: 25m from where you throw, with 0.2m precision, so landing location might differ slightly between local and remote.
   * If you want rotation sync, install the components from the Rotation-Synced directory.
 
 ## Install guide
