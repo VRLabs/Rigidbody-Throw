@@ -47,9 +47,9 @@ https://github.com/VRLabs/Rigidbody-Throw/assets/76777936/57fbfe66-ddfd-4b0c-b16
 * Place the objects you want to to use inside ``Rigidbody Throw`` -> ``Container``.
     * Alternatively you can constrain the objects to ``Container``.
 * Your right hand gesture must be 2 (HandOpen) for the system to release, and 1 (Fist) to reset.
-* To change the friction and the bounciness, change the parameters on the ``Resources/Physics Material`` Physics Material.
+* To change the friction and the bounciness, change the parameters on the ``Resources/Physics Material`` Physics Material and apply that Physics Material to your Collision Collider.
 * To have a custom throwing/reset condition, change the ``GestureRight Equals 1 or 2`` conditions in the ``Rigidbody Throw Main`` layer.  
-* Note: A physics material is supplied in the Resources folder. This can be applied to the Collision Collider to change the friction while rolling.
+* To change world collision, only use Colliders on the `Collision Collider` object. This can be a Box Collider, Sphere Collider, Capsule Collider, but it has to be on the `Collision Collider` object.
 
 ## Performance stats
 
