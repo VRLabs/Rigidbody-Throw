@@ -1,0 +1,28 @@
+{
+    "name": "dev.vrlabs.rigidbody-throw",
+    "displayName": "Rigidbody Throw",
+    "version": "1.0.999",
+    "license": "MIT",
+    "unity": "2019.4",
+    "description": "A constraint system for throwing objects",
+    "author": {
+        "name": "VRLabs",
+        "email": "mail@vrlabs.dev",
+        "url": "https://vrlabs.dev"
+    },
+    "siteUrl": "https://github.com/VRLabs/Rigidbody-Throw",
+    "vpmDependencies": {
+        "dev.vrlabs.instancer": ">=1.0.2"
+    },
+    "legacyFolders": {},
+    "unityPackageDestinationFolder": "Assets/VRLabs/Rigidbody Throw",
+    "vccRepoCategory": "systems",
+    "media": {
+        "previewImage": "https://raw.githubusercontent.com/VRLabs/Rigidbody-Throw/main/Media/Web/Preview.webp",
+        "previewGif": "https://raw.githubusercontent.com/VRLabs/Rigidbody-Throw/main/Media/Web/PreviewGif.webp"
+    },
+    "unityPackageDestinationFolderMetas": {
+        "Assets/VRLabs": "652a1ba5b00554143bc9a76307dbc4e8",
+        "Assets/VRLabs/Rigidbody Throw": "c2397041475ca1d46a4352d0deaf9cc0"
+    }
+}
