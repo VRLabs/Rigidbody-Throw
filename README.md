@@ -41,11 +41,11 @@ https://github.com/VRLabs/Rigidbody-Throw/assets/76777936/57fbfe66-ddfd-4b0c-b16
 * Merge the Expression Parameter List ``Rigidbody Throw Parameters`` to your own Expression Parameter List, using the [Avatars 3.0 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) tool.
 * Drag & drop the ``Rigidbody Throw`` prefab into the base of your Hierarchy.
 * Right click and unpack the prefab, then drag & drop it onto your avatar.
-* Move ``Reset Target`` outside of ``Rigidbody Throw`` and place it anywhere in your avatar's hierarchy. Adjust the transforms as needed.
+* Move ``Reset Target`` outside of ``Rigidbody Throw/Throw`` and place it anywhere in your avatar's hierarchy. Adjust the transforms as needed.
 
 ## How to use
 
-* Place the objects you want to to use inside ``Rigidbody Throw`` -> ``Container``.
+* Place the objects you want to to use inside ``Rigidbody Throw`` -> ``Throw`` -> ``Container``.
     * Alternatively you can constrain the objects to ``Container``.
 * Your right hand gesture must be 2 (HandOpen) for the system to release, and 1 (Fist) to reset.
 * To change the friction and the bounciness, change the parameters on the ``Resources/Physics Material`` Physics Material and apply that Physics Material to your Collision Collider.
@@ -87,57 +87,59 @@ Expression Parameters:  51
 Default version:
 ```html
 Rigidbody Throw
-|-Reset Target
-|-Force Particle
-|-Container
-|  |-Colliders
-|  |  |-Force Collider
-|  |  |-Colission Collider
-|  |  |-Collision Detection
-|  |-Example Sphere
-|-Quick Position Sync
-|  |-Position Sync
-|  |  |-Contacts
-|  |  |  |-Sender
-|  |  |  |-Receiver X
-|  |  |  |-Receiver Y
-|  |  |  |-Receiver Z
-|  |  |-Local Target
-|  |  |-Remote Target
+|-Throw
+|  |-Reset Target
+|  |-Force Particle
+|  |-Container
+|  |  |-Colliders
+|  |  |  |-Force Collider
+|  |  |  |-Colission Collider
+|  |  |  |-Collision Detection
+|  |  |-Example Sphere
+|  |-Quick Position Sync
+|  |  |-Position Sync
+|  |  |  |-Contacts
+|  |  |  |  |-Sender
+|  |  |  |  |-Receiver X
+|  |  |  |  |-Receiver Y
+|  |  |  |  |-Receiver Z
+|  |  |  |-Local Target
+|  |  |  |-Remote Target
 ```
 
 Rotation synced version:
 ```html
 Rigidbody Throw
-|-Reset Target
-|-Force Particle
-|-Container
-|  |-Colliders
-|  |  |-Force Collider
-|  |  |-Colission Collider
-|  |  |-Collision Detection
-|  |-Example Cube
-|-Quick Position Sync
-|  |-Position Sync
-|  |  |-Contacts
-|  |  |  |-Sender
-|  |  |  |-Receiver X
-|  |  |  |-Receiver Y
-|  |  |  |-Receiver Z
-|  |  |-Local Target
-|  |  |-Remote Target
-|  |-Rotation Sync
-|  |  |-Measure Bones
-|  |  |  |-Measure X Magnitude
-|  |  |  |-Measure X Sign
-|  |  |  |-Measure Y Magnitude
-|  |  |  |-Measure Y Sign
-|  |  |  |-Measure Z Magnitude
-|  |  |  |-Measure Z Sign
-|  |  |-Measure Planes
-|  |  |  |-X Angle Plane
-|  |  |  |-Y Angle Plane
-|  |  |  |-Z Angle Plane
+|-Throw
+|  |-Reset Target
+|  |-Force Particle
+|  |-Container
+|  |  |-Colliders
+|  |  |  |-Force Collider
+|  |  |  |-Colission Collider
+|  |  |  |-Collision Detection
+|  |  |-Example Cube
+|  |-Quick Position Sync
+|  |  |-Position Sync
+|  |  |  |-Contacts
+|  |  |  |  |-Sender
+|  |  |  |  |-Receiver X
+|  |  |  |  |-Receiver Y
+|  |  |  |  |-Receiver Z
+|  |  |  |-Local Target
+|  |  |  |-Remote Target
+|  |  |-Rotation Sync
+|  |  |  |-Measure Bones
+|  |  |  |  |-Measure X Magnitude
+|  |  |  |  |-Measure X Sign
+|  |  |  |  |-Measure Y Magnitude
+|  |  |  |  |-Measure Y Sign
+|  |  |  |  |-Measure Z Magnitude
+|  |  |  |  |-Measure Z Sign
+|  |  |  |-Measure Planes
+|  |  |  |  |-X Angle Plane
+|  |  |  |  |-Y Angle Plane
+|  |  |  |  |-Z Angle Plane
 ```
 
 ## Contributors
@@ -146,6 +148,7 @@ Rigidbody Throw
 * [jellejurre](https://github.com/jellejurre)
 * [jetees](https://github.com/jetees)
 * [JustSleightly](https://links.sleightly.dev)
+* [Liindy](https://liindy.gumroad.com/)
 
 ## License
 
