@@ -87,57 +87,59 @@ Expression Parameters:  51
 Default version:
 ```html
 Rigidbody Throw
-|-Reset Target
-|-Force Particle
-|-Container
-|  |-Colliders
-|  |  |-Force Collider
-|  |  |-Colission Collider
-|  |  |-Collision Detection
-|  |-Example Sphere
-|-Quick Position Sync
-|  |-Position Sync
-|  |  |-Contacts
-|  |  |  |-Sender
-|  |  |  |-Receiver X
-|  |  |  |-Receiver Y
-|  |  |  |-Receiver Z
-|  |  |-Local Target
-|  |  |-Remote Target
+|-Throw
+|  |-Reset Target
+|  |-Force Particle
+|  |-Container
+|  |  |-Colliders
+|  |  |  |-Force Collider
+|  |  |  |-Colission Collider
+|  |  |  |-Collision Detection
+|  |  |-Example Sphere
+|  |-Quick Position Sync
+|  |  |-Position Sync
+|  |  |  |-Contacts
+|  |  |  |  |-Sender
+|  |  |  |  |-Receiver X
+|  |  |  |  |-Receiver Y
+|  |  |  |  |-Receiver Z
+|  |  |  |-Local Target
+|  |  |  |-Remote Target
 ```
 
 Rotation synced version:
 ```html
 Rigidbody Throw
-|-Reset Target
-|-Force Particle
-|-Container
-|  |-Colliders
-|  |  |-Force Collider
-|  |  |-Colission Collider
-|  |  |-Collision Detection
-|  |-Example Cube
-|-Quick Position Sync
-|  |-Position Sync
-|  |  |-Contacts
-|  |  |  |-Sender
-|  |  |  |-Receiver X
-|  |  |  |-Receiver Y
-|  |  |  |-Receiver Z
-|  |  |-Local Target
-|  |  |-Remote Target
-|  |-Rotation Sync
-|  |  |-Measure Bones
-|  |  |  |-Measure X Magnitude
-|  |  |  |-Measure X Sign
-|  |  |  |-Measure Y Magnitude
-|  |  |  |-Measure Y Sign
-|  |  |  |-Measure Z Magnitude
-|  |  |  |-Measure Z Sign
-|  |  |-Measure Planes
-|  |  |  |-X Angle Plane
-|  |  |  |-Y Angle Plane
-|  |  |  |-Z Angle Plane
+|-Throw
+|  |-Reset Target
+|  |-Force Particle
+|  |-Container
+|  |  |-Colliders
+|  |  |  |-Force Collider
+|  |  |  |-Colission Collider
+|  |  |  |-Collision Detection
+|  |  |-Example Cube
+|  |-Quick Position Sync
+|  |  |-Position Sync
+|  |  |  |-Contacts
+|  |  |  |  |-Sender
+|  |  |  |  |-Receiver X
+|  |  |  |  |-Receiver Y
+|  |  |  |  |-Receiver Z
+|  |  |  |-Local Target
+|  |  |  |-Remote Target
+|  |  |-Rotation Sync
+|  |  |  |-Measure Bones
+|  |  |  |  |-Measure X Magnitude
+|  |  |  |  |-Measure X Sign
+|  |  |  |  |-Measure Y Magnitude
+|  |  |  |  |-Measure Y Sign
+|  |  |  |  |-Measure Z Magnitude
+|  |  |  |  |-Measure Z Sign
+|  |  |  |-Measure Planes
+|  |  |  |  |-X Angle Plane
+|  |  |  |  |-Y Angle Plane
+|  |  |  |  |-Z Angle Plane
 ```
 
 ## Contributors
