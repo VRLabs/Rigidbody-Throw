@@ -42,7 +42,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_TranslationOffset.y
-    path: Rigidbody Throw/Quick Position Sync/Position Sync/Remote Target
+    path: Rigidbody Throw/Throw/Quick Position Sync/Position Sync/Remote Target
     classID: 1818360608
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -54,7 +54,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2307290321
+      path: 2911669812
       attribute: 4294967285
       script: {fileID: 0}
       typeID: 1818360608
@@ -107,7 +107,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_TranslationOffset.y
-    path: Rigidbody Throw/Quick Position Sync/Position Sync/Remote Target
+    path: Rigidbody Throw/Throw/Quick Position Sync/Position Sync/Remote Target
     classID: 1818360608
     script: {fileID: 0}
   m_EulerEditorCurves: []
