@@ -596,7 +596,7 @@ MonoBehaviour:
   collisionTags:
   - RigidbodyThrow/Z
   allowSelf: 1
-  allowOthers: 1
+  allowOthers: 0
   localOnly: 1
   receiverType: 2
   parameter: RigidbodyThrow/Z
@@ -5588,7 +5588,7 @@ MonoBehaviour:
   collisionTags:
   - RigidbodyThrow/Y
   allowSelf: 1
-  allowOthers: 1
+  allowOthers: 0
   localOnly: 1
   receiverType: 2
   parameter: RigidbodyThrow/Y
@@ -11876,7 +11876,7 @@ MonoBehaviour:
   collisionTags:
   - RigidbodyThrow/X
   allowSelf: 1
-  allowOthers: 1
+  allowOthers: 0
   localOnly: 1
   receiverType: 2
   parameter: RigidbodyThrow/X
