@@ -4,7 +4,8 @@
 
 [![Generic badge](https://img.shields.io/github/downloads/VRLabs/Rigidbody-Throw/total?label=Downloads)](https://github.com/VRLabs/Rigidbody-Throw/releases/latest)
 [![Generic badge](https://img.shields.io/badge/License-MIT-informational.svg)](https://github.com/VRLabs/Rigidbody-Throw/blob/main/LICENSE)
-[![Generic badge](https://img.shields.io/badge/Unity-2019.4.31f1-lightblue.svg)](https://unity3d.com/unity/whats-new/2019.4.31)
+[![Generic badge](https://img.shields.io/badge/Quest-Incompatible-red?logo=Meta)](https://img.shields.io/badge/Quest-Incompatible-red?logo=Meta)
+[![Generic badge](https://img.shields.io/badge/Unity-2022.3.22f1-lightblue?logo=Unity)](https://unity.com/releases/editor/whats-new/2022.3.22)
 [![Generic badge](https://img.shields.io/badge/SDK-AvatarSDK3-lightblue.svg)](https://vrchat.com/home/download)
 
 [![Generic badge](https://img.shields.io/discord/706913824607043605?color=%237289da&label=DISCORD&logo=Discord&style=for-the-badge)](https://discord.vrlabs.dev/)
@@ -14,9 +15,7 @@ Throw an object with collision against the world
 
 ![Rigidbody Throw](https://github.com/VRLabs/Rigidbody-Throw/assets/76777936/b4915105-3d27-4095-b162-435a2a981b89)
 
-
 ### ⬇️ [Download Latest Version](https://github.com/VRLabs/Rigidbody-Throw/releases/latest)
-
 
 ### 📦 [Add to VRChat Creator Companion](https://vrlabs.dev/packages?package=dev.vrlabs.rigidbody-throw)
 
@@ -46,7 +45,7 @@ https://github.com/VRLabs/Rigidbody-Throw/assets/76777936/57fbfe66-ddfd-4b0c-b16
 ## How to use
 
 * Place the objects you want to to use inside ``Rigidbody Throw`` -> ``Throw`` -> ``Container``.
-    * Alternatively you can constrain the objects to ``Container``.
+  * Alternatively you can constrain the objects to ``Container``.
 * Your right hand gesture must be 2 (HandOpen) for the system to release, and 1 (Fist) to reset.
 * To change the friction and the bounciness, change the parameters on the ``Resources/Physics Material`` Physics Material and apply that Physics Material to your Collision Collider.
 * To have a custom throwing/reset condition, change the ``GestureRight Equals 1 or 2`` conditions in the ``Rigidbody Throw Main`` layer.  
@@ -55,9 +54,11 @@ https://github.com/VRLabs/Rigidbody-Throw/assets/76777936/57fbfe66-ddfd-4b0c-b16
 ## Performance stats
 
 Default version:
+
 ```c++
 Colliders:              2
 Constraints:            10
+Constraint Depth:       7
 Contact Receivers:      4
 Contact Senders:        2
 FX Animator Layers:     4
@@ -68,9 +69,11 @@ Expression Parameters:  27
 ```
 
 Rotation synced version:
+
 ```c++
 Colliders:              2
 Constraints:            14
+Constraint Depth:       8
 Contact Receivers:      4
 Contact Senders:        2
 FX Animator Layers:     4
@@ -85,6 +88,7 @@ Expression Parameters:  51
 ## Hierarchy layout
 
 Default version:
+
 ```html
 Rigidbody Throw
 |-Throw
@@ -108,6 +112,7 @@ Rigidbody Throw
 ```
 
 Rotation synced version:
+
 ```html
 Rigidbody Throw
 |-Throw
@@ -167,4 +172,3 @@ Rigidbody Throw is available as-is under MIT. For more information see [LICENSE]
 [<img src="https://github.com/VRLabs/Resources/raw/main/Icons/Twitter.png" width="50" height="50">](https://twitter.com/vrlabsdev "VRLabs")
 
 </div>
-

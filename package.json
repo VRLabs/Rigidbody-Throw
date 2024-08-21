@@ -3,7 +3,7 @@
     "displayName": "Rigidbody Throw",
     "version": "1.0.999",
     "license": "MIT",
-    "unity": "2019.4",
+    "unity": "2022.3",
     "description": "A constraint system for throwing objects",
     "author": {
         "name": "VRLabs",
@@ -24,5 +24,6 @@
     "unityPackageDestinationFolderMetas": {
         "Assets/VRLabs": "652a1ba5b00554143bc9a76307dbc4e8",
         "Assets/VRLabs/Rigidbody Throw": "c2397041475ca1d46a4352d0deaf9cc0"
-    }
+    },
+    "questCompatibility": "none"
 }
