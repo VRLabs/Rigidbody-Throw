@@ -4980,7 +4980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1311225890174049379}
   m_Layer: 0
-  m_Name: Reset Target
+  m_Name: Throw Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11054,7 +11054,8 @@ MonoBehaviour:
   Locked: 1
   Sources:
     source0:
-      SourceTransform: {fileID: 6796087303457531351, guid: 4ac3597c84ed4a25a1fc953bebd6b5ff, type: 3}
+      SourceTransform: {fileID: 6796087303457531351, guid: 4ac3597c84ed4a25a1fc953bebd6b5ff,
+        type: 3}
       Weight: 1
       ParentPositionOffset: {x: 0, y: 0, z: 0}
       ParentRotationOffset: {x: 0, y: 0, z: 0}
@@ -11591,7 +11592,8 @@ MonoBehaviour:
   Locked: 1
   Sources:
     source0:
-      SourceTransform: {fileID: 6796087303457531351, guid: 4ac3597c84ed4a25a1fc953bebd6b5ff, type: 3}
+      SourceTransform: {fileID: 6796087303457531351, guid: 4ac3597c84ed4a25a1fc953bebd6b5ff,
+        type: 3}
       Weight: 1
       ParentPositionOffset: {x: 0, y: 0, z: 0}
       ParentRotationOffset: {x: 0, y: 0, z: 0}
