@@ -25,7 +25,7 @@ Throw an object with collision against the world
 
 ## How it works
 
-* A particle system is parented to the throw target, which emits particles as it moves.
+* A particle system is parented to the reset target, which emits particles as it moves.
 * When the system is enabled, these particles hit the Force Collider, which adds force to the Rigidbody.
 * This Rigidbody then flies forward as if thrown, and collides with the world using the Collision Collider.
 * Meanwhile, Contact Senders and Receivers, in combination with Constraints, are used to figure out the position of the thrown object, and this is synced to the remote client (since parameter force is local only).
@@ -40,7 +40,7 @@ https://github.com/VRLabs/Rigidbody-Throw/assets/76777936/57fbfe66-ddfd-4b0c-b16
 * Merge the Expression Parameter List ``Rigidbody Throw Parameters`` to your own Expression Parameter List, using the [Avatars 3.0 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) tool.
 * Drag & drop the ``Rigidbody Throw`` prefab into the base of your Hierarchy.
 * Right click and unpack the prefab, then drag & drop it onto your avatar.
-* Move ``Throw Target`` outside of ``Rigidbody Throw/Throw`` and place it anywhere in your avatar's hierarchy. Adjust the transforms as needed.
+* Move ``Reset Target`` outside of ``Rigidbody Throw/Throw`` and place it anywhere in your avatar's hierarchy. Adjust the transforms as needed.
 
 ## How to use
 
@@ -61,7 +61,7 @@ Constraints:            10
 Constraint Depth:       7
 Contact Receivers:      4
 Contact Senders:        2
-FX Animator Layers:     3
+FX Animator Layers:     4
 Particle Systems:       2
 Rigidbodies:            2
 Joints:                 1
@@ -92,7 +92,7 @@ Default version:
 ```html
 Rigidbody Throw
 |-Throw
-|  |-Throw Target
+|  |-Reset Target
 |  |-Force Particle
 |  |-Container
 |  |  |-Colliders
@@ -116,7 +116,7 @@ Rotation synced version:
 ```html
 Rigidbody Throw
 |-Throw
-|  |-Throw Target
+|  |-Reset Target
 |  |-Force Particle
 |  |-Container
 |  |  |-Colliders
