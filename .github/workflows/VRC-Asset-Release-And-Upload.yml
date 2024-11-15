@@ -9,7 +9,7 @@ on:
       CHANGELOG:
         required: true
         type: string
-        description: Enter as a list using '- ' and '\n' (e.g. "- First item\n- Second item".). Don't use ' or ". 
+        description: Enter as a list using '- ' and '\n' (e.g. "- First item\n- Second item".). Don't use  ". 
       CHECKOUT_REF:
         type: string
         description: full commit hash, if none supplied, latest main is taken
