@@ -16,7 +16,7 @@ on:
 
 jobs:
   deploy:
-    uses: VRLabs/Workflows-collection/.github/workflows/VRC-Asset-Release-And-Upload.yml@add-new-workflow
+    uses: VRLabs/Workflows-collection/.github/workflows/VRC-Asset-Release-And-Upload.yml@main
     with:
       ASSETS_PATH: .
       TAG: ${{ inputs.TAG }}
