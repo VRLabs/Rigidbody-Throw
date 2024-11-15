@@ -1,3 +1,4 @@
+name: Create Tag and Release
 on:
   workflow_dispatch:
     inputs:
@@ -8,6 +9,7 @@ on:
       CHANGELOG:
         required: true
         type: string
+        description: Enter as a list using '- ' and '\n' (e.g. "- First item\n- Second item".). Don't use ' or ". 
       COMMIT:
         type: string
         description: full commit hash, if none supplied, latest main is taken
@@ -18,20 +20,21 @@ jobs:
     permissions: 
       contents: write
     steps:
-      - name: Determine input
+      - name: Determine checkout ref
         run: |
           if [[ -z "${{ inputs.COMMIT }}" ]]; then
             echo "CHECKOUT_REF=main" >> $GITHUB_ENV
           else
             echo "CHECKOUT_REF=${{ inputs.COMMIT }}" >> $GITHUB_ENV
           fi
+          
       - name: Checkout code repository
         uses: actions/checkout@v4
         with:
           ref: ${{ env.CHECKOUT_REF }}
           path: ./Checkout
+          
       - name: Create tag
-
         run: |
           cd ./Checkout
           git config user.name "github-actions[bot]"
@@ -48,4 +51,6 @@ jobs:
       TAG: ${{ inputs.TAG }}
       CHANGELOG: ${{ inputs.CHANGELOG }}
       REPOSITORY: ${{ github.repository }}
+      CHECKOUT_REF: ${{ inputs.CHECKOUT_REF }}
     secrets: inherit
+    needs: create-tag
