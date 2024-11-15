@@ -24,4 +24,3 @@ jobs:
       REPOSITORY: ${{ github.repository }}
       CHECKOUT_REF: ${{ inputs.CHECKOUT_REF }}
     secrets: inherit
-    needs: create-tag
