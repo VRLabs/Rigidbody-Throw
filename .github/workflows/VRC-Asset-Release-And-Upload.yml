@@ -29,11 +29,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ env.CHECKOUT_REF }}
-          path: ./Assets
+          path: ./Checkout
       - name: Create tag
 
         run: |
-          cd ./Assets
+          cd ./Checkout
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git tag "${{ inputs.TAG }}" "${{ env.CHECKOUT_REF }}"
@@ -44,10 +44,7 @@ jobs:
   deploy:
     uses: VRLabs/Workflows-collection/.github/workflows/VRC-Asset-Release-And-Upload.yml@add-new-workflow
     with:
-      ASSETS_PATH: ./Assets
-      RELEASE_PATH: Packages 
-      ARTIFACT_DURATION: 30 # In days
-      UPLOAD_ENDPOINT: https://api.vrlabs.dev/packages/add
+      ASSETS_PATH: .
       TAG: ${{ inputs.TAG }}
       CHANGELOG: ${{ inputs.CHANGELOG }}
       REPOSITORY: ${{ github.repository }}
