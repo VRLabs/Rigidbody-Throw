@@ -15,35 +15,6 @@ on:
         description: full commit hash, if none supplied, latest main is taken
 
 jobs:
-  create-tag:
-    runs-on: "ubuntu-latest"
-    permissions: 
-      contents: write
-    steps:
-      - name: Determine checkout ref
-        run: |
-          if [[ -z "${{ inputs.COMMIT }}" ]]; then
-            echo "CHECKOUT_REF=main" >> $GITHUB_ENV
-          else
-            echo "CHECKOUT_REF=${{ inputs.COMMIT }}" >> $GITHUB_ENV
-          fi
-          
-      - name: Checkout code repository
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ env.CHECKOUT_REF }}
-          path: ./Checkout
-          
-      - name: Create tag
-        run: |
-          cd ./Checkout
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git tag "${{ inputs.TAG }}" "${{ env.CHECKOUT_REF }}"
-          git push origin "${{ inputs.TAG }}"
-          cd -
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   deploy:
     uses: VRLabs/Workflows-collection/.github/workflows/VRC-Asset-Release-And-Upload.yml@add-new-workflow
     with:
